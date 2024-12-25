@@ -4,7 +4,7 @@ const Sidebar = () => {
   return (
     <div className="sidebars">
       <p>hehe</p>
-      <p>khkkkhkhkhkkhk</p>
+      <p>Games and Sports </p>
     </div>
   )
 }
