@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Card from './Card'
-import Sidebar from './Sidebar'
-import MyChart from './chart'
+import Card from './components/Card'
+import Sidebar from './components/Sidebar'
+import MyChart from './components/chart'
 import data from './detailss.json'
 
 const App = () => {
@@ -31,16 +31,12 @@ const App = () => {
       <Sidebar/>
     </section>
     <main className='MainWindow'>
-    <div className='container'>
-      <Card userData={data}/>
-      {/* <Card title={"boys"}/> */}
-      {/* <Card userData={data}/> */}
-      {/* <Card userData={data}/> */}
-    </div>
-    <div className="charts">
-      <MyChart/>
-      <MyChart/>
-    </div>
+      <div className='container'>
+        <Card userData={data}/>
+      </div>
+      <div className="charts">
+        <MyChart/>
+      </div>
     </main>
     </>
   )
