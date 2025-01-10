@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Mpagi Raymond",
+        "age": 24,
+        "city": "Entebbe",
+        "image": "/src/assets/peter.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "James bond",
+        "age": 23,
+        "city": "Kampala",
+        "image": "/src/assets/jo.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Alice Johnson",
+        "age": 29,
+        "city": "Mukono",
+        "image": "/src/assets/react.svg"
+    }
+]

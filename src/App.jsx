@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Card from './Card'
 import Sidebar from './Sidebar'
 import MyChart from './chart'
+import data from './detailss.json'
 
 const App = () => {
   const [name, setName] = useState("");
@@ -31,10 +32,10 @@ const App = () => {
     </section>
     <main className='MainWindow'>
     <div className='container'>
-      <Card/>
-      <Card/>
-      <Card/>
-      {/* <Card/> */}
+      <Card userData={data}/>
+      {/* <Card title={"boys"}/> */}
+      {/* <Card userData={data}/> */}
+      {/* <Card userData={data}/> */}
     </div>
     <div className="charts">
       <MyChart/>

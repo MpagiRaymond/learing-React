@@ -8,7 +8,6 @@ header("Access-Control-Allow-Methods:* ");
 $user = $_POST['name'];
 if(isset($_POST['submit'])){
     
-     alert("hello Raymond");
 
 }
 // echo "hello from the server: $user";
