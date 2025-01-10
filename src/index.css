@@ -113,3 +113,7 @@ button:focus-visible {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px; 
 }
+.imagg{
+  height: 100px;
+  width: 100%;
+}

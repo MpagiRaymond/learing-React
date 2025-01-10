@@ -11,8 +11,9 @@ return (
 
 {userData.map((userDat) => (
           <div className="boys mid" key={userDat.id}>
-                <img src={userDat.image} alt={userDat.name} style={{width: "100px", height: "100px", objectFit: "cover"}} />
-                <p className="title"></p>
+                <div className="imagg">
+                <img src={userDat.image} alt={userDat.name} style={{width: "100%", height: "100%", borderRadius: "24px", objectFit: "cover"}} />
+                </div>
                 <div className="Details">
                     <div className="datailss">{userDat.name}</div>
                     <div className="title">{userDat.age}</div>
