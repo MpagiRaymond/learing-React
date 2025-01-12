@@ -34,7 +34,7 @@ const options = {
 const MyChart = () => (
     <div>
         <Bar data={data} options={options} />
-        <Bar data={data1} options={options} />
+        {/* <Bar data={data1} options={options} /> */}
     </div>
 );
 

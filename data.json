@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "Hobbies": "Football",
+        "skills": "Hacking"
+    },
+    {
+        "id": 2,
+        "Hobbies": "Vollay Ball",
+        "skills": "Networking"
+    },
+    {
+        "id": 3,
+        "Hobbies": "Programming",
+        "skills": "Web development"
+    }
+]
