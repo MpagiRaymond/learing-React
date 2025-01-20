@@ -32,6 +32,7 @@ const App = () => {
 
   return (
     <>
+        <Router>
       <section className='sidebars'>
         <form onSubmit={handleSubmit}>
           <input type="text" id="name" name="name" value={name} onChange={handleChange} />
@@ -41,18 +42,12 @@ const App = () => {
         <h1>{result}</h1>
         {/* <Sidebar /> */}
 
-        <Router>
-        <ul style={{ listStyleType: "none" }}>
+        <ul style={{ listStyleType: "none"}}>
            <li style={{ margin: "10px 0" }}> 
               <Link to="/">Home</Link> </li> 
            <li style={{ margin: "10px 0" }}>
               <Link to="/chart">Charts in JavaScript</Link> </li> 
            </ul>
-          <Routes>
-            <Route path="/" element={<Sidebar/>}/>
-            <Route path="/chart" element={<MyChart />} />
-          </Routes>
-        </Router>
       </section>
 
       <main className='MainWindow'>
@@ -60,9 +55,14 @@ const App = () => {
           <Card userData={data} />
         </div>
         <div className="charts">
-          <MyChart />
+          <Routes style={{ background: "blue"}}>
+            <Route path="/" element={<Sidebar/>}/>
+            <Route path="/chart" element={<MyChart />} />
+          </Routes>
+          {/* <MyChart /> */}
         </div>
       </main>
+        </Router>
     </>
   );
 };
